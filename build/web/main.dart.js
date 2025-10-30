@@ -72959,7 +72959,7 @@ R(a){var s=null
 return new A.vG(B.Kq,"200 IM Split Calculator",A.qB(s,s,B.jd,s),s)}}
 A.xF.prototype={
 ap(){var s=$.aj()
-return new A.Bd(new A.hp(B.xg,s),A.c([new A.hp(new A.bU("23",B.d7,B.aL),s),new A.hp(new A.bU("26",B.d7,B.aL),s),new A.hp(new A.bU("28",B.d7,B.aL),s),new A.hp(new A.bU("23",B.d7,B.aL),s)],t.PF),A.c([],t.s))}}
+return new A.Bd(new A.hp(B.xg,s),A.c([new A.hp(new A.bU("23.4",B.d7,B.aL),s),new A.hp(new A.bU("25.5",B.d7,B.aL),s),new A.hp(new A.bU("27.5",B.d7,B.aL),s),new A.hp(new A.bU("23.61",B.d7,B.aL),s)],t.PF),A.c([],t.s))}}
 A.Bd.prototype={
 a48(a){var s=a.split(":")
 if(s.length===2)return A.Rk(s[0])*60+A.Rk(s[1])
@@ -72977,10 +72977,10 @@ o=A.U(p).j("a6<1,I>")
 m=A.Z(new A.a6(p,new A.adF(s),o),o.j("ar.E"))
 q=m
 k.az(new A.adG(k,q))}catch(l){k.az(new A.adH(k))}},
-R(a){var s,r,q=this,p=null,o=["Fly","Back","Breast","Free"],n=t.F,m=A.c([A.anb(q.d,B.Cf,p),B.jP,B.OF],n)
+R(a){var s,r,q=this,p=null,o=["Fly","Back","Breast","Free"],n=t.F,m=A.c([A.anb(q.d,B.Cf,p),B.jP,B.OE],n)
 for(s=q.e,r=0;r<4;++r)m.push(new A.e2(B.BA,A.anb(s[r],new A.mP(p,p,p,o[r],p,p,p,p,p,p,p,p,p,p,p,p,!0,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,"%",p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.rs,!0,p,p,p,p),B.L8),p))
 m.push(B.jP)
-m.push(new A.EC(q.gXo(),p,p,p,p,p,p,!1,p,!0,p,B.OE,p))
+m.push(new A.EC(q.gXo(),p,p,p,p,p,p,!1,p,!0,p,B.OF,p))
 m.push(B.jP)
 if(q.f.length!==0){n=A.c([],n)
 for(r=0;s=q.f,r<s.length;++r)n.push(A.jt(o[r]+": "+s[r],p,p,p,B.NB,p,p))
@@ -76200,7 +76200,7 @@ B.Cd=new A.iY("\ufffc",null,null,null,!0,!0,B.aj)
 B.Ce=new A.va(null,null,null,null,null,null,null,null,null,B.lR,B.kJ,!1,null,!1,null,null,null,null,null,null,null,null,!1,null,null,null,null,null,null,null,null,null,null,null,!1,null,null)
 B.ky=new A.b3(B.l,1,B.u,-1)
 B.rs=new A.fF(4,B.ey,B.ky)
-B.Cf=new A.mP(null,null,null,"Goal Time (e.g. 2:00.00)",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.rs,!0,null,null,null,null)
+B.Cf=new A.mP(null,null,null,"Goal Time (e.g. 1:49.00)",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.rs,!0,null,null,null,null)
 B.RC=new A.mP(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.m2=new A.iZ(0.5,1,B.bf)
 B.Ch=new A.iZ(0.6,1,B.ar)
@@ -77932,8 +77932,8 @@ B.NT=new A.p(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.Lv=new A.p(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.OC=new A.dS(B.MR,B.M4,B.MS,B.Ni,B.LM,B.LT,B.Ml,B.Na,B.Mv,B.NI,B.Lm,B.LC,B.NE,B.NT,B.Lv)
 B.OD=new A.ld("200 IM Split Calculator",null,null,null,null,null,null,null,null)
-B.OE=new A.ld("Calculate Splits",null,null,null,null,null,null,null,null)
-B.OF=new A.ld("Percentages for each 50:",null,null,null,null,null,null,null,null)
+B.OE=new A.ld("Split percentages for each 50:",null,null,null,null,null,null,null,null)
+B.OF=new A.ld("Calculate Splits",null,null,null,null,null,null,null,null)
 B.RJ=new A.a6U(0,"system")
 B.GL=new A.f(0.056,0.024)
 B.GZ=new A.f(0.108,0.3085)
