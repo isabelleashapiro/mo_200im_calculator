@@ -122,7 +122,10 @@ class _SplitCalculatorState extends State<SplitCalculator> {
                 children: [
                   for (int i = 0; i < _results.length; i++)
                     Text(
-                      "${strokes[i]}: ${_results[i]}",
+                      // If _results has 4 items, show strokes; otherwise just show the message
+                      _results.length == 4
+                          ? "${strokes[i]}: ${_results[i]}"
+                          : _results[i],
                       style: const TextStyle(fontSize: 18),
                     ),
                 ],

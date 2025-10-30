@@ -72979,16 +72979,16 @@ p=A.U(k).j("a6<1,I>")
 n=A.Z(new A.a6(k,new A.adG(s),p),p.j("ar.E"))
 q=n
 l.aw(new A.adH(l,q))}catch(m){l.aw(new A.adI(l))}},
-R(a){var s,r,q=this,p=null,o=["Fly","Back","Breast","Free"],n=t.F,m=A.c([A.anc(q.d,B.Cf,p),B.jP,B.OE],n)
-for(s=q.e,r=0;r<4;++r)m.push(new A.e2(B.BA,A.anc(s[r],new A.mP(p,p,p,o[r],p,p,p,p,p,p,p,p,p,p,p,p,!0,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,"%",p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.rs,!0,p,p,p,p),B.L8),p))
-m.push(B.jP)
-m.push(new A.EC(q.gXo(),p,p,p,p,p,p,!1,p,!0,p,B.OF,p))
-m.push(B.jP)
-if(q.f.length!==0){n=A.c([],n)
-for(r=0;s=q.f,r<s.length;++r)n.push(A.jt(o[r]+": "+s[r],p,p,p,B.NB,p,p))
-m.push(A.ah8(n,B.ca,B.cn,B.r9))}n=A.as([null,0],t.LO,t.S)
-s=m.length
-return new A.wY(new A.tm(B.OD,new A.Nj(p,p,1/0,56),p),new A.e2(B.BD,new A.FS(new A.a5w(!0,!0,!0,m,n),p,B.b4,!1,p,p,B.y5,!1,p,s,B.aC,p,p,B.a9,B.at,p),p),p)}}
+R(a){var s,r,q,p=this,o=null,n=["Fly","Back","Breast","Free"],m=t.F,l=A.c([A.anc(p.d,B.Cf,o),B.jP,B.OE],m)
+for(s=p.e,r=0;r<4;++r)l.push(new A.e2(B.BA,A.anc(s[r],new A.mP(o,o,o,n[r],o,o,o,o,o,o,o,o,o,o,o,o,!0,!0,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,"%",o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,B.rs,!0,o,o,o,o),B.L8),o))
+l.push(B.jP)
+l.push(new A.EC(p.gXo(),o,o,o,o,o,o,!1,o,!0,o,B.OF,o))
+l.push(B.jP)
+if(p.f.length!==0){m=A.c([],m)
+for(r=0;s=p.f,q=s.length,r<q;++r)m.push(A.jt(q===4?n[r]+": "+s[r]:s[r],o,o,o,B.NB,o,o))
+l.push(A.ah8(m,B.ca,B.cn,B.r9))}m=A.as([null,0],t.LO,t.S)
+s=l.length
+return new A.wY(new A.tm(B.OD,new A.Nj(o,o,1/0,56),o),new A.e2(B.BD,new A.FS(new A.a5w(!0,!0,!0,l,m),o,B.b4,!1,o,o,B.y5,!1,o,s,B.aC,o,o,B.a9,B.at,o),o),o)}}
 A.adE.prototype={
 $0(){this.a.f=A.c(["Please enter a goal time"],t.s)},
 $S:0}
