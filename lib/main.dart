@@ -51,6 +51,14 @@ class _SplitCalculatorState extends State<SplitCalculator> {
   }
 
   void _calculate() {
+    final goalText = _goalTimeController.text.trim();
+
+    if (goalText.isEmpty) {
+      setState(() {
+        _results = ["Please enter a goal time"];
+      });
+      return;
+    }
     try {
       double total = _parseTime(_goalTimeController.text);
       final percents = _percentControllers
