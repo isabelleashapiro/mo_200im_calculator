@@ -27,10 +27,10 @@ class SplitCalculator extends StatefulWidget {
 class _SplitCalculatorState extends State<SplitCalculator> {
   final TextEditingController _goalTimeController = TextEditingController();
   final List<TextEditingController> _percentControllers = [
-    TextEditingController(text: "23"),
-    TextEditingController(text: "26"),
-    TextEditingController(text: "28"),
-    TextEditingController(text: "23"),
+    TextEditingController(text: "23.4"),
+    TextEditingController(text: "25.5"),
+    TextEditingController(text: "27.5"),
+    TextEditingController(text: "23.61"),
   ];
   List<String> _results = [];
 
@@ -81,12 +81,12 @@ class _SplitCalculatorState extends State<SplitCalculator> {
             TextField(
               controller: _goalTimeController,
               decoration: const InputDecoration(
-                labelText: "Goal Time (e.g. 2:00.00)",
+                labelText: "Goal Time (e.g. 1:49.00)",
                 border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 16),
-            const Text("Percentages for each 50:"),
+            const Text("Split percentages for each 50:"),
             for (int i = 0; i < 4; i++)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
