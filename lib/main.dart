@@ -26,13 +26,11 @@ class SplitCalculator extends StatefulWidget {
 
 class _SplitCalculatorState extends State<SplitCalculator> {
   final TextEditingController _goalTimeController = TextEditingController();
-  final List<TextEditingController> _percentControllers = [
-    TextEditingController(text: "23.4"),
-    TextEditingController(text: "25.5"),
-    TextEditingController(text: "27.5"),
-    TextEditingController(text: "23.61"),
-  ];
   List<String> _results = [];
+
+  // Fixed percentage values (same as before)
+  final List<double> _fixedPercents = [23.4, 25.5, 27.5, 23.61];
+  final List<String> _strokes = ["Fly", "Back", "Breast", "Free"];
 
   double _parseTime(String time) {
     final parts = time.split(":");
@@ -59,12 +57,10 @@ class _SplitCalculatorState extends State<SplitCalculator> {
       });
       return;
     }
+
     try {
-      double total = _parseTime(_goalTimeController.text);
-      final percents = _percentControllers
-          .map((c) => double.parse(c.text) / 100)
-          .toList();
-      final splits = percents.map((p) => total * p).toList();
+      double total = _parseTime(goalText);
+      final splits = _fixedPercents.map((p) => total * (p / 100)).toList();
 
       setState(() {
         _results = splits.map(_formatTime).toList();
@@ -78,8 +74,6 @@ class _SplitCalculatorState extends State<SplitCalculator> {
 
   @override
   Widget build(BuildContext context) {
-    final strokes = ["Fly", "Back", "Breast", "Free"];
-
     return Scaffold(
       appBar: AppBar(title: const Text('200 IM Split Calculator')),
       body: Padding(
@@ -94,20 +88,18 @@ class _SplitCalculatorState extends State<SplitCalculator> {
               ),
             ),
             const SizedBox(height: 16),
-            const Text("Split percentages for each 50:"),
-            for (int i = 0; i < 4; i++)
+            const Text(
+              "Split percentages for each 50:",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            // Display fixed percentages instead of editable fields
+            for (int i = 0; i < _strokes.length; i++)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
-                child: TextField(
-                  controller: _percentControllers[i],
-                  decoration: InputDecoration(
-                    labelText: strokes[i],
-                    suffixText: "%",
-                    border: const OutlineInputBorder(),
-                  ),
-                  keyboardType: const TextInputType.numberWithOptions(
-                    decimal: true,
-                  ),
+                child: Text(
+                  "${_strokes[i]}: ${_fixedPercents[i].toStringAsFixed(2)}%",
+                  style: const TextStyle(fontSize: 16),
                 ),
               ),
             const SizedBox(height: 16),
@@ -120,14 +112,14 @@ class _SplitCalculatorState extends State<SplitCalculator> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  for (int i = 0; i < _results.length; i++)
-                    Text(
-                      // If _results has 4 items, show strokes; otherwise just show the message
-                      _results.length == 4
-                          ? "${strokes[i]}: ${_results[i]}"
-                          : _results[i],
-                      style: const TextStyle(fontSize: 18),
-                    ),
+                  if (_results.length == 4)
+                    for (int i = 0; i < _results.length; i++)
+                      Text(
+                        "${_strokes[i]}: ${_results[i]}",
+                        style: const TextStyle(fontSize: 18),
+                      )
+                  else
+                    Text(_results.first, style: const TextStyle(fontSize: 18)),
                 ],
               ),
           ],
