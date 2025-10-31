@@ -28,7 +28,7 @@ class _SplitCalculatorState extends State<SplitCalculator> {
   final TextEditingController _goalTimeController = TextEditingController();
   List<String> _results = [];
 
-  // Fixed percentage values (same as before)
+  // Fixed split percentages (hidden from UI)
   final List<double> _fixedPercents = [23.4, 25.5, 27.5, 23.61];
   final List<String> _strokes = ["Fly", "Back", "Breast", "Free"];
 
@@ -88,24 +88,19 @@ class _SplitCalculatorState extends State<SplitCalculator> {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              "Split percentages for each 50:",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            // Display fixed percentages instead of editable fields
-            for (int i = 0; i < _strokes.length; i++)
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4),
-                child: Text(
-                  "${_strokes[i]}: ${_fixedPercents[i].toStringAsFixed(2)}%",
-                  style: const TextStyle(fontSize: 16),
-                ),
-              ),
-            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: _calculate,
               child: const Text("Calculate Splits"),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              "This is based on 4 years of research done by Coach Peter Daland!",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                fontStyle: FontStyle.italic,
+                color: Colors.black54,
+              ),
             ),
             const SizedBox(height: 16),
             if (_results.isNotEmpty)
