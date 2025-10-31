@@ -10,7 +10,7 @@ class IMSplitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '200 IM Split Calculator',
+      title: 'IM Split Calculator',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const SplitCalculator(),
     );
@@ -75,7 +75,7 @@ class _SplitCalculatorState extends State<SplitCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('200 IM Split Calculator')),
+      appBar: AppBar(title: const Text('IM Split Calculator')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: ListView(

@@ -72910,7 +72910,7 @@ return B.c.b6(r,s)},
 $S:455}
 A.Ff.prototype={
 R(a){var s=null
-return new A.vF(B.Ks,"200 IM Split Calculator",A.qz(s,s,B.jd,s),s)}}
+return new A.vF(B.Ks,"IM Split Calculator",A.qz(s,s,B.jd,s),s)}}
 A.xE.prototype={
 ao(){var s=t.s
 return new A.Bc(new A.Ix(B.xc,$.aj()),A.c([],s),A.c([23.4,25.5,27.5,23.61],t.n),A.c(["Fly","Back","Breast","Free"],s))}}
@@ -72928,14 +72928,14 @@ p=A.W(q).j("a6<1,K>")
 o=A.a_(new A.a6(q,new A.adD(s),p),p.j("as.E"))
 r=o
 m.aw(new A.adE(m,r))}catch(n){m.aw(new A.adF(m))}},
-R(a){var s,r,q,p=this,o=null,n=t.F,m=A.c([new A.y3(p.d,B.Ce,B.L8,B.Km,B.Kn,!0,o),B.wV,new A.EB(p.gXo(),o,o,o,o,o,o,!1,o,!0,o,B.OG,o),B.Kj,B.OF,B.wV],n)
+R(a){var s,r,q,p=this,o=null,n=t.F,m=A.c([new A.y3(p.d,B.Ce,B.L8,B.Km,B.Kn,!0,o),B.wV,new A.EB(p.gXo(),o,o,o,o,o,o,!1,o,!0,o,B.OF,o),B.Kj,B.OE,B.wV],n)
 if(p.e.length!==0){n=A.c([],n)
 s=p.e
 if(s.length===4)for(s=p.r,r=0;q=p.e,r<q.length;++r)n.push(A.jr(s[r]+": "+q[r],o,o,o,B.xm,o,o))
 else n.push(A.jr(B.b.ga_(s),o,o,o,B.xm,o,o))
 m.push(A.ah6(n,B.ca,B.cn,B.r6))}n=A.ar([null,0],t.LO,t.S)
 s=m.length
-return new A.wX(new A.tk(B.OE,new A.Ni(o,o,1/0,56),o),new A.ej(B.BB,new A.FR(new A.a5u(!0,!0,!0,m,n),o,B.b3,!1,o,o,B.y3,!1,o,s,B.aC,o,o,B.a9,B.at,o),o),o)}}
+return new A.wX(new A.tk(B.OG,new A.Ni(o,o,1/0,56),o),new A.ej(B.BB,new A.FR(new A.a5u(!0,!0,!0,m,n),o,B.b3,!1,o,o,B.y3,!1,o,s,B.aC,o,o,B.a9,B.at,o),o),o)}}
 A.adC.prototype={
 $0(){this.a.e=A.c(["Please enter a goal time"],t.s)},
 $S:0}
@@ -77878,11 +77878,11 @@ B.NF=new A.p(!0,B.F,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.NU=new A.p(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.Lw=new A.p(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.OD=new A.dS(B.MT,B.M5,B.MU,B.Nk,B.LN,B.LU,B.Mn,B.Nc,B.Mx,B.NJ,B.Ln,B.LD,B.NF,B.NU,B.Lw)
-B.OE=new A.la("200 IM Split Calculator",null,null,null,null,null,null,null,null)
 B.BX=new A.Wy(1,"italic")
 B.M7=new A.p(!0,B.E,null,null,null,null,14,null,B.BX,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.OF=new A.la("This is based on 4 years of research done by Coach Peter Daland!",null,B.M7,B.h6,null,null,null,null,null)
-B.OG=new A.la("Calculate Splits",null,null,null,null,null,null,null,null)
+B.OE=new A.la("This is based on 4 years of research done by Coach Peter Daland!",null,B.M7,B.h6,null,null,null,null,null)
+B.OF=new A.la("Calculate Splits",null,null,null,null,null,null,null,null)
+B.OG=new A.la("IM Split Calculator",null,null,null,null,null,null,null,null)
 B.RJ=new A.a6S(0,"system")
 B.GK=new A.f(0.056,0.024)
 B.GY=new A.f(0.108,0.3085)
