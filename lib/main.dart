@@ -72,6 +72,13 @@ class _SplitCalculatorState extends State<SplitCalculator> {
     }
   }
 
+  void _reset() {
+    setState(() {
+      _goalTimeController.clear();
+      _results = [];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,7 +97,30 @@ class _SplitCalculatorState extends State<SplitCalculator> {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: _calculate,
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.grey[700],
+                side: BorderSide(color: Colors.grey[400]!),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12,
+                  horizontal: 24,
+                ),
+                textStyle: const TextStyle(fontSize: 16),
+              ),
               child: const Text("Calculate Splits"),
+            ),
+            const SizedBox(height: 8),
+            OutlinedButton(
+              onPressed: _reset,
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.grey[700],
+                side: BorderSide(color: Colors.grey[400]!),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12,
+                  horizontal: 24,
+                ),
+                textStyle: const TextStyle(fontSize: 14),
+              ),
+              child: const Text("Reset"),
             ),
             const SizedBox(height: 12),
             const Text(
